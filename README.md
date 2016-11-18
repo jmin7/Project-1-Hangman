@@ -1,6 +1,6 @@
 # Project-1-Hangman
 
-## Overwiew ##
+## Project description ##
 
 ## Technologies Used ##
 
@@ -10,5 +10,11 @@
 - Text Editor: Atom
 
 
+## User Stories - Trello Board ##
+
 ## Wireframe ##
 <img src=https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true>
+
+## Live Site ##
+
+
