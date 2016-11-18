@@ -12,6 +12,9 @@
 
 ## User Stories - Trello Board ##
 
+<a href=https://trello.com/b/Pz6TfSXH/project-1-hangman>Trello</a>
+
+
 ## Wireframe ##
 <img src=https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true>
 
