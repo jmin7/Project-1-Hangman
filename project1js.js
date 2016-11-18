@@ -90,25 +90,25 @@ window.onload = function () {
     // Animate hangman
         animate = function () {
         if (lives === 6) {
-      document.getElementById('image').src = 'image/hangman1.jpg';
+      document.getElementById('image').src = 'image/hangman2.png';
       }
       else if (lives === 5) {
-      document.getElementById('image').src = 'image/hangman2.jpg';
+      document.getElementById('image').src = 'image/hangman3.png';
       }
       else if (lives === 4) {
-      document.getElementById('image').src = 'image/hangman3.jpg';
+      document.getElementById('image').src = 'image/hangman4.png';
       }
       else if (lives === 3) {
-      document.getElementById('image').src = 'image/hangman4.jpg';
+      document.getElementById('image').src = 'image/hangman5.png';
       }
       else if (lives === 2) {
-      document.getElementById('image').src = 'image/hangman5.jpg';
+      document.getElementById('image').src = 'image/hangman6.png';
       }
       else if (lives === 1) {
-      document.getElementById('image').src = 'image/hangman6.jpg';
+      document.getElementById('image').src = 'image/hangman7.png';
       }
       else if (lives === 0) {
-      document.getElementById('image').src = 'image/hangman7.jpg';
+      document.getElementById('image').src = 'image/hangman8.png';
       }
       }
         animate();
