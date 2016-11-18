@@ -1,8 +1,8 @@
 # Project-1-Hangman
 
-## Project description ##
+## * Project description ##
 
-## Technologies Used ##
+## * Technologies Used ##
 
 - Languages: HTML5, Javascript, DOM 
 - Design:  CSS3, Google Fonts
@@ -10,14 +10,14 @@
 - Text Editor: Atom
 
 
-## User Stories - Trello Board ##
+## * User Stories - Trello Board ##
 
 <a href=https://trello.com/b/Pz6TfSXH/project-1-hangman>Trello</a>
 
 
-## Wireframe ##
+## * Wireframe ##
 <img src=https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true>
 
-## Live Site ##
+## *Live Site ##
 
 
