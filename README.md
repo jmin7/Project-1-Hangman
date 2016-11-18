@@ -4,8 +4,8 @@
 
 ## Technologies Used ##
 
-- Languages: HTML5, CSS3, Javascript, DOM 
-- Design:  Google Fonts
+- Languages: HTML5, Javascript, DOM 
+- Design:  CSS3, Google Fonts
 - Project Planning & User Stories: Trello
 - Text Editor: Atom
 
