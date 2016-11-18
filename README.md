@@ -1,6 +1,6 @@
 # Project-1-Hangman
 
-## * Project description ##
+##  Project description ##
 
 ## * Technologies Used ##
 
