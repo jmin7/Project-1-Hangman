@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <title>Hangman game</title>
     <link rel="stylesheet" href="project1css.css">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Gloria+Hallelujah" rel="stylesheet"><div class="wrapper">
   </head>
 
   <body>
-<div class="wrapper">
-  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Gloria+Hallelujah" rel="stylesheet"><div class="wrapper">
 
- <h1>H a n g m a n</h1>
+<div class="body">
+ <h1>H A N G M A N</h1>
+  <p>Ready to play a hangman? </p>
+  <br>
+    <button id="start">Start ! </button>
+    <div id="again">  </div>
 
-    <p>Ready to play a hangman?</p>
-   <p>Click the alphabet below to guess the word.</p>
-</div>
-<div class="wrapper">
+    <p id="instruction">
+    Click the alphabet below to guess the word.</p>
+
     <div id="buttons">  </div>
-    <div id="hold">    </div>
-    <p id="mylives"></p>
-    <p sid="clue"></p>
+    <div id="placeForWord">  </div>
+    <p id="lives">  </p>
 
-   <div id="stickman">
-   <img id='image' src='image/hangman1.png'> </div>
+   <img id="image" src="image/hangman1.png">
+   <br>
 
-    <div class="container">
-      <button id="reset">Play again</button>
-    </div>
   </div>
 
   <script src="project1js.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   </body>
 </html>
