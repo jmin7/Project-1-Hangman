@@ -23,8 +23,13 @@ window.onload = function() {
     // Play
     var play = function() {
         var words = [
-            "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
-            "COMMAND", "FIZZBUZZ"
+          "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
+          "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
+          "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
+          "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
+          "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
+          "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
+          "JAZZ", "LUCKY",
         ];
         word = words[Math.floor(Math.random() * words.length)];
         counter = 0;

@@ -23,8 +23,13 @@ window.onload = function() {
     // Play
     var play = function() {
         var words = [
-            "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
-            "COMMAND", "FIZZBUZZ"
+          "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
+          "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
+          "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
+          "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
+          "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
+          "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
+          "JAZZ", "LUCKY",
         ];
         word = words[Math.floor(Math.random() * words.length)];
         counter = 0;
@@ -160,7 +165,7 @@ window.onload = function() {
             pushButton = document.getElementById('instruction');
             pushButton.innerHTML = "&#8659; Click the alphabet below to guess the word &#8659;";
 
-            document.getElementById('image').src = 'image/hangman1.png';
+            document.getElementById('image').src = 'hangman1.png';
             guesses = [];
             play();
         } else {
