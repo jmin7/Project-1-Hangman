@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <title>Hangman game</title>
     <link rel="stylesheet" href="project1css.css">
-    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Gloria+Hallelujah" rel="stylesheet"><div class="wrapper">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo|Gloria+Hallelujah|Ubuntu" rel="stylesheet">
   </head>
 
   <body>
 
-<div class="body">
- <h1>H A N G M A N</h1>
-  <p>Ready to play a hangman? </p>
-  <br>
-    <button id="start">Start ! </button>
-    <div id="again">  </div>
+    <div class="body">
+      <h1>H A N G M A N</h1>
+      <p>Ready to play a hangman? </p>
 
-    <p id="instruction">
-    Click the alphabet below to guess the word.</p>
+      <div id=again>
+      <button id="start">Start ! </button>
+      <p id="newPlayer"> </p>
+      </div>
+
+      <p id="instruction">
+        &#8659; Click the alphabet below to gusess the word &#8659;</p>
+
 
     <div id="buttons">  </div>
-    <div id="placeForWord">  </div>
-    <p id="lives">  </p>
+    <div id="placeForWord">    </div>
+    <p id="lives">   </p>
 
-   <img id="image" src="image/hangman1.png">
-   <br>
-
+    <div class="inline">
+    <div id="score"><p id="currentScore"></p></div>
+    <div>
+    <img id="image" src="image/hangman1.png"></div>
+    </div>
   </div>
-
-  <script src="project1js.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="project1js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
   </body>
 </html>
