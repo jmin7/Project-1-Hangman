@@ -1,6 +1,12 @@
 # Project-1-Hangman
 
-##  Project description ##
+##  * Project description ##
+
+ Hangman game with 7 chances to guess the word. Once the word for the game is chosen, each letter is shown in a blank. 
+ Player starts guessing by clicking the alphabet button. If the guess is right, the letter will appear instead of blank space, if wrong system draws a hangman. After a letter is used, button is unclickable so the user will not try to guess the same letter twice. 
+If the player reveals all of the hidden letters before reaching 7 incorrect guesses, then the user wins. 
+While the player is same, system shows score by counting numbers of winning. 
+New player button will refresh everything including the score and start a new game.
 
 ## * Technologies Used ##
 
