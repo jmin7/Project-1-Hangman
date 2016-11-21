@@ -129,19 +129,19 @@ window.onload = function() {
 
     var animate = function() {
         if (lives === 6) {
-            document.getElementById('image').src = 'image/hangman2.png';
+            document.getElementById('image').src = 'hangman2.png';
         } else if (lives === 5) {
-            document.getElementById('image').src = 'image/hangman3.png';
+            document.getElementById('image').src = 'hangman3.png';
         } else if (lives === 4) {
-            document.getElementById('image').src = 'image/hangman4.png';
+            document.getElementById('image').src = 'hangman4.png';
         } else if (lives === 3) {
-            document.getElementById('image').src = 'image/hangman5.png';
+            document.getElementById('image').src = 'hangman5.png';
         } else if (lives === 2) {
-            document.getElementById('image').src = 'image/hangman6.png';
+            document.getElementById('image').src = 'hangman6.png';
         } else if (lives === 1) {
-            document.getElementById('image').src = 'image/hangman7.png';
+            document.getElementById('image').src = 'hangman7.png';
         } else if (lives === 0) {
-            document.getElementById('image').src = 'image/hangman8.png';
+            document.getElementById('image').src = 'hangman8.png';
         }
     }
 
@@ -171,7 +171,7 @@ window.onload = function() {
             pushButton = document.getElementById('instruction');
             pushButton.innerHTML = "&#8659; Click the alphabet below to guess the word &#8659;";
 
-            document.getElementById('image').src = 'image/hangman1.png';
+            document.getElementById('image').src = 'hangman1.png';
 
             guesses = [];
             score = 0;
