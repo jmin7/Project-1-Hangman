@@ -23,7 +23,8 @@ New player button will refresh everything including the score and start a new ga
 
 ## [Wireframe] ##
  Below is a initial wireframe of this hangman game.
-<img src=https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true>
+ 
+![](https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true)
 
 ## [Live Site] ##
 
