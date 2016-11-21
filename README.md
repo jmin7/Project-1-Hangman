@@ -19,7 +19,7 @@ New player button will refresh everything including the score and start a new ga
 
 ## [User Stories - Trello Board] ##
 
-<a href=https://trello.com/b/Pz6TfSXH/project-1-hangman>Clike to see the trello board</a>
+<a href=https://trello.com/b/Pz6TfSXH/project-1-hangman> trello board</a>
 ![](https://github.com/jmin7/Project-1-Hangman/blob/master/image/Trello.jpg?raw=true)
 
 
