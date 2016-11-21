@@ -10,7 +10,7 @@ New player button will refresh everything including the score and start a new ga
 
 ## [Technologies Used] ##
 
-- Languages: HTML5, Javascript, DOM 
+- Languages: HTML5, Javascript, DOM, JQuery
 - Design:  CSS3, Google Fonts
 - Project Planning & User Stories: Trello
 - Text Editor: Atom
@@ -28,5 +28,4 @@ New player button will refresh everything including the score and start a new ga
 
 ## [Live Site] ##
 
-<a href="http://instructor-canary-60685.bitballoon.com/">Live Site</a>
-<a href="http://hhhhhangman.bitballoon.com/"> 222222222 </a>
+<a href="http://hhhhhangman.bitballoon.com/"> Live site </a>
