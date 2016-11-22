@@ -7,6 +7,7 @@
 If the player reveals all of the hidden letters before reaching 7 incorrect guesses, then the user wins. 
 The game shows score and score can be cleared by the 'refresh score' button.
 
+
 ## [Technologies Used] ##
 
 - Languages: HTML5, Javascript, DOM, JQuery
@@ -29,6 +30,8 @@ The game shows score and score can be cleared by the 'refresh score' button.
  
 ![](https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true)
 
+
 ## [Live Site] ##
 
-<a href="http://hhhhhangman.bitballoon.com"> Try playing hangman here (recommend opening in a new tab)</a>
+<a href="http://hhhhangman.bitballoon.com"> Try playing hangman here (recommend opening in a new tab)</a>
+
