@@ -1,15 +1,6 @@
 window.onload = function() {
 
 
-    var words; //word array
-    var word; // Selected word
-    var each; // Guess
-    var guesses = []; // Stored guesses
-    var lives; // Lives
-    var counter; // Count correct guesses
-    var score = 0;
-
-
     var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
@@ -20,16 +11,24 @@ window.onload = function() {
     scoreBoard.setAttribute('id', 'number');
     showScore.appendChild(scoreBoard);
 
+    var words; //word array
+    var word; // Selected word
+    var each; // Guess
+    var guesses = [];
+    var counter; // Count correct guesses
+    var lives;
+    var score = 0;
+
     // Play
     var play = function() {
         var words = [
-          "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
-          "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
-          "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
-          "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
-          "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
-          "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
-          "JAZZ", "LUCKY",
+            "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
+            "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
+            "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
+            "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
+            "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
+            "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
+            "JAZZ", "LUCKY",
         ];
         word = words[Math.floor(Math.random() * words.length)];
         counter = 0;
@@ -53,7 +52,6 @@ window.onload = function() {
         }
     }
 
-
     // Create guesses ul
     var blank = function() {
         text = document.getElementById('placeForWord');
@@ -71,43 +69,40 @@ window.onload = function() {
         }
     }
 
-
     // left lives / win
     var notice = function() {
-        var livesLeft = document.getElementById("lives");
-        livesLeft.innerHTML = "You have " + lives + " lives left";
+        var livesLeft = document.getElementById('lives');
+        livesLeft.innerHTML = 'You have ' + lives + ' lives left';
         if (lives < 1) {
-            livesLeft.innerHTML = "Game Over !! <br>" +
-                " The word was " + word;
+            livesLeft.innerHTML = 'Game Over !! <br>' +
+                'The word was '  + word;
             buttons.removeChild(letters);
             letters.removeChild(alpha);
             startButton = document.getElementById('start');
-            startButton.innerHTML = "Try Again !"
+            startButton.innerHTML = 'Try Again !'
 
             pushButton = document.getElementById('instruction');
-            pushButton.innerHTML = " ";
+            pushButton.innerHTML = ' ';
         }
 
         for (var i = 0; i < guesses.length; i++) {
             if (counter === guesses.length) {
-                livesLeft.innerHTML = "&#x263A;&#x263A; You Win ! &#x263A;&#x263A;";
+                livesLeft.innerHTML = '&#x263A;&#x263A; You Win ! &#x263A;&#x263A;';
             }
         }
         if (counter === guesses.length) {
             buttons.removeChild(letters);
             letters.removeChild(alpha);
             startButton = document.getElementById('start');
-            startButton.innerHTML = "Try Again !"
+            startButton.innerHTML = 'Try Again !'
 
             pushButton = document.getElementById('instruction');
-            pushButton.innerHTML = " ";
+            pushButton.innerHTML = ' ';
 
             score++;
-            scoreBoard.innerHTML = "Score : " + score;
-
+            scoreBoard.innerHTML = 'Score : ' + score;
         }
     }
-
 
     // OnClick Function
     var compare = function() {
@@ -131,7 +126,6 @@ window.onload = function() {
         }
     }
 
-
     var animate = function() {
         if (lives === 6) {
             document.getElementById('image').src = 'image/hangman2.png';
@@ -150,20 +144,18 @@ window.onload = function() {
         }
     }
 
-
     // game start
     play();
-
 
     // play again
     document.getElementById('start').onclick = function() {
         if (lives < 1 || counter === guesses.length) {
             text.removeChild(answer);
             startButton = document.getElementById('start');
-            startButton.innerHTML = "New Game"
+            startButton.innerHTML = 'New Game'
 
             pushButton = document.getElementById('instruction');
-            pushButton.innerHTML = "&#8659; Click the alphabet below to guess the word &#8659;";
+            pushButton.innerHTML = '&#8659; Click the alphabet below to guess the word &#8659;';
 
             document.getElementById('image').src = 'image/hangman1.png';
             guesses = [];
@@ -174,19 +166,17 @@ window.onload = function() {
 
             text.removeChild(answer);
             pushButton = document.getElementById('instruction');
-            pushButton.innerHTML = "&#8659; Click the alphabet below to guess the word &#8659;";
+            pushButton.innerHTML = '&#8659; Click the alphabet below to guess the word &#8659;';
 
             document.getElementById('image').src = 'image/hangman1.png';
-
             guesses = [];
-            score = 0;
             play();
         }
     }
 
+    // score 0
     document.getElementById('newPlayer').onclick = function() {
         score = 0;
-        $('#number').text('');
-        console.log(score);
+        $('#number').text(' ');
     }
 }

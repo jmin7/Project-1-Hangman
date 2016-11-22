@@ -1,15 +1,6 @@
 window.onload = function() {
 
 
-    var words; //word array
-    var word; // Selected word
-    var each; // Guess
-    var guesses = []; // Stored guesses
-    var lives; // Lives
-    var counter; // Count correct guesses
-    var score = 0;
-
-
     var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
         'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',
         'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
@@ -20,16 +11,24 @@ window.onload = function() {
     scoreBoard.setAttribute('id', 'number');
     showScore.appendChild(scoreBoard);
 
+    var words; //word array
+    var word; // Selected word
+    var each; // Guess
+    var guesses = [];
+    var counter; // Count correct guesses
+    var lives;
+    var score = 0;
+
     // Play
     var play = function() {
         var words = [
-          "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
-          "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
-          "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
-          "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
-          "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
-          "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
-          "JAZZ", "LUCKY",
+            "JAVASCRIPT", "HANGMAN", "DEBUGGING", "GAMES",
+            "COMMAND", "FIZZBUZZ", "MEMORY", "OPEN", "THANKSGIVING",
+            "HALLOWEEN", "STATIONERY", "MOTORCYCLE", "ENGINE",
+            "DRUM", "LIQUID", "BASEBALL", "GIRAFFE", "LION",
+            "NEWSPAPER", "YELLOW", "RED", "IRIS", "SUNFLOWER",
+            "VIOLET", "MOON", "REMOTE", "SEASON", "TIMER", "RHYTHM",
+            "JAZZ", "LUCKY",
         ];
         word = words[Math.floor(Math.random() * words.length)];
         counter = 0;
@@ -53,7 +52,6 @@ window.onload = function() {
         }
     }
 
-
     // Create guesses ul
     var blank = function() {
         text = document.getElementById('placeForWord');
@@ -70,7 +68,6 @@ window.onload = function() {
             guesses.push(each);
         }
     }
-
 
     // left lives / win
     var notice = function() {
@@ -108,7 +105,6 @@ window.onload = function() {
         }
     }
 
-
     // OnClick Function
     var compare = function() {
         alpha.onclick = function() {
@@ -131,7 +127,6 @@ window.onload = function() {
         }
     }
 
-
     var animate = function() {
         if (lives === 6) {
             document.getElementById('image').src = 'hangman2.png';
@@ -150,10 +145,8 @@ window.onload = function() {
         }
     }
 
-
     // game start
     play();
-
 
     // play again
     document.getElementById('start').onclick = function() {
@@ -177,16 +170,14 @@ window.onload = function() {
             pushButton.innerHTML = "&#8659; Click the alphabet below to guess the word &#8659;";
 
             document.getElementById('image').src = 'hangman1.png';
-
             guesses = [];
-            score = 0;
             play();
         }
     }
 
+    // score 0
     document.getElementById('newPlayer').onclick = function() {
         score = 0;
         $('#number').text('');
-        console.log(score);
     }
 }
