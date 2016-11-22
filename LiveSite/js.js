@@ -11,6 +11,11 @@ window.onload = function() {
     scoreBoard.setAttribute('id', 'number');
     showScore.appendChild(scoreBoard);
 
+    var startBgm = document.getElementById('jumping');
+    var loseBgm = document.getElementById('losing');
+    var winBgm = document.getElementById('winning');
+    var newPlayerBgm = document.getElementById('changing');
+
     var words; //word array
     var word; // Selected word
     var each; // Guess
@@ -18,6 +23,7 @@ window.onload = function() {
     var counter; // Count correct guesses
     var lives;
     var score = 0;
+
 
     // Play
     var play = function() {
@@ -36,6 +42,7 @@ window.onload = function() {
         createButtons();
         blank();
         notice();
+        startBgm.play();
     }
 
     // create alphabet button
@@ -80,6 +87,7 @@ window.onload = function() {
             letters.removeChild(alpha);
             startButton = document.getElementById('start');
             startButton.innerHTML = "Try Again !"
+            loseBgm.play();
 
             pushButton = document.getElementById('instruction');
             pushButton.innerHTML = " ";
@@ -95,6 +103,7 @@ window.onload = function() {
             letters.removeChild(alpha);
             startButton = document.getElementById('start');
             startButton.innerHTML = "Try Again !"
+            winBgm.play();
 
             pushButton = document.getElementById('instruction');
             pushButton.innerHTML = " ";
@@ -179,5 +188,6 @@ window.onload = function() {
     document.getElementById('newPlayer').onclick = function() {
         score = 0;
         $('#number').text('');
+        newPlayerBgm.play();
     }
 }
