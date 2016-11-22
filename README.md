@@ -18,11 +18,13 @@ The game shows score and score can be cleared by the 'refresh score' button.
 
 ## [User Stories - Trello Board] ##
 
-<a href=https://trello.com/b/Pz6TfSXH/project-1-hangman> trello board</a>
+<a href=https://trello.com/b/Pz6TfSXH/project-1-hangman> Trello board</a>
+
 ![](https://github.com/jmin7/Project-1-Hangman/blob/master/image/Trello.jpg?raw=true)
 
 
 ## [Wireframe] ##
+
  Below is an initial wireframe of this hangman game.
  
 ![](https://github.com/jmin7/Project-1-Hangman/blob/master/image/wireframe.png?raw=true)
