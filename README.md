@@ -29,4 +29,4 @@ The game shows score and score can be cleared by the 'refresh score' button.
 
 ## [Live Site] ##
 
-<a href="http://hhhhhhangman.bitballoon.com/"> Try playing hangman here </a>
+<a href="http://hhhhhangman.bitballoon.com"> Try playing hangman here (recommend opening in a new tab)</a>
