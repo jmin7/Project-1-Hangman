@@ -48,16 +48,19 @@ button:hover {
 }
 
 #alphabet {
-    margin: 20px auto;
+    margin: 2em auto;
     /*padding: 0;*/
-    max-width: 680px;
+    width: 720px;
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: bold;
 }
 
 #alphabet li {
     display: inline-block;
-    margin: 0 10px 10px 0;
+    /*margin: 0 10px 10px 0;*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /*padding: 10px;*/
     width: 40px;
     height: 40px;
     background: white;
@@ -67,10 +70,14 @@ button:hover {
 }
 
 #alphabet li:hover {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 36px;
+    height: 36px;
     background: #FFB0B3;
-    border: solid 3px white;
+    border: solid 2px white;
     color: black;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #selectedletter {
